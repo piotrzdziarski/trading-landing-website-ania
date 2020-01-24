@@ -91,9 +91,50 @@
   !*** ./src/js/app.js ***!
   \***********************/
 /*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ./includes/nav-control */ "./src/js/includes/nav-control.js");
+
+/***/ }),
+
+/***/ "./src/js/includes/nav-control.js":
+/*!****************************************!*\
+  !*** ./src/js/includes/nav-control.js ***!
+  \****************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
+var hamburger = document.getElementById('hamburger');
+var hamburgerInner = document.getElementById('hamburger-inner');
+var collapse = document.getElementById('collapse');
+var collapseHeight;
 
+if (innerWidth < 992) {
+  setUpCollapse();
+}
+
+hamburger.onclick = function () {
+  if (hamburgerInner.classList.contains('active')) {
+    collapse.style.maxHeight = '0';
+    hamburgerInner.classList.remove('active');
+    collapse.classList.remove('active');
+  } else {
+    collapse.style.maxHeight = collapseHeight + 'px';
+    hamburgerInner.classList.add('active');
+    collapse.classList.add('active');
+  }
+};
+
+addEventListener('resize', function () {
+  if (!collapseHeight && innerWidth < 992) {
+    setUpCollapse();
+  }
+});
+
+function setUpCollapse() {
+  collapseHeight = collapse.offsetHeight;
+  collapse.style.maxHeight = '0';
+}
 
 /***/ }),
 

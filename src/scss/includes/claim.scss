@@ -1,0 +1,126 @@
+.claim {
+  position: relative;
+
+  @media (min-width: 992px) {
+    padding-top: 80px;
+  }
+
+  .img {
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @media (min-width: 992px) {
+      position: absolute;
+      right: 0;
+      top: 80px;
+      width: 60vw;
+      order: 2;
+      z-index: 1;
+    }
+
+    @media (min-width: 1200px) {
+      width: 50vw;
+    }
+  }
+
+  .block-text {
+    margin-top: -8px;
+    padding: 50px 0;
+    background: $primary;
+    color: #fff;
+
+    @media (min-width: 576px) {
+      padding: 60px 0;
+    }
+
+    @media (min-width: 768px) {
+      padding: 70px 0;
+    }
+
+    @media (min-width: 992px) {
+      align-self: stretch;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: unset;
+      padding: unset;
+      width: 100%;
+      height: calc(60vw * 0.5396);
+      order: 1;
+    }
+
+    @media (min-width: 1200px) {
+      height: calc(50vw * 0.5396);
+    }
+
+    .container {
+      @media (min-width: 992px) {
+        width: 100%;
+      }
+
+      @media (min-width: 1600px) {
+        padding-left: 200px;
+      }
+    }
+  }
+
+  .h1 {
+    display: inline-block;
+    background: $primary;
+    font-size: 34px;
+    font-weight: 700;
+
+    @media (min-width: 992px) {
+      position: relative;
+      padding: 3px 15px 3px 0;
+      z-index: 2;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 38px;
+    }
+  }
+
+  .h2 {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 400;
+
+    @media (min-width: 992px) {
+      margin-top: unset;
+      padding: 3px 15px 3px 0;
+      position: relative;
+      z-index: 2;
+      background: $primary;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 28px;
+    }
+  }
+
+  .btn {
+    display: block;
+    margin-top: 15px;
+    padding: 12px 18px;
+    border: unset;
+    background: #fff;
+    color: $primary;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+
+    @media (min-width: 992px) {
+      padding: 15px 20px;
+    }
+
+    &:focus {
+      outline: 2px solid #b9bbbe;
+    }
+  }
+}

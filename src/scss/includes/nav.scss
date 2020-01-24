@@ -1,0 +1,162 @@
+#nav {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+
+  @media (min-width: 992px) {
+    box-shadow: 0 28px 29px rgba(0, 0, 0, 0.06);
+  }
+
+  #collapse {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    transition: max-height .3s, opacity .3s;
+    opacity: 0;
+    z-index: 1;
+
+    @media (min-width: 992px) {
+      position: static;
+      justify-content: center;
+      flex-direction: row;
+      padding-bottom: unset;
+      height: 100%;
+      opacity: 1 !important;
+
+      &.active {
+        box-shadow: unset !important;
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      box-shadow: 0 40px 35px rgba(0, 0, 0, 0.11);
+
+      .a {
+        visibility: visible;
+      }
+    }
+  }
+
+  .a {
+    padding: 40px 0 0 0;
+    color: black;
+    transition: color .2s;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    visibility: hidden;
+
+    @media (min-width: 576px) {
+      padding: 45px 0 0 0;
+    }
+
+    @media (min-width: 992px) {
+      padding: unset;
+      margin: 0 34px;
+      visibility: visible !important;
+    }
+
+    @media (min-width: 1200px) {
+      margin: 0 38px;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+
+    &:first-child {
+      padding-top: 80px;
+
+      @media (min-width: 992px) {
+        padding-top: unset;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+
+      @media (min-width: 576px) {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: 992px) {
+        padding-bottom: unset;
+        margin-bottom: unset;
+      }
+    }
+  }
+
+  #hamburger {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+
+    @media (min-width: 768px) {
+      right: 30px;
+    }
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  #hamburger-inner {
+    position: relative;
+    width: 40px;
+    height: 2px;
+    border-radius: 4px;
+    background: #fff;
+    transition: transform .3s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -11px;
+      width: 40px;
+      height: 2px;
+      border-radius: 4px;
+      background: #fff;
+      transition: transform .3s;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 11px;
+      width: 40px;
+      height: 2px;
+      border-radius: 4px;
+      background: #fff;
+      transition: opacity .1s;
+    }
+
+    &.active {
+      background: $primary;
+      transform: rotate(-45deg);
+
+      &::before {
+        background: $primary;
+        transform: rotate(90deg) translateX(11px);
+      }
+
+      &::after {
+        background: $primary;
+        opacity: 0;
+      }
+    }
+  }
+}
