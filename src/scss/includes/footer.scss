@@ -1,0 +1,94 @@
+.footer {
+  padding: 60px 0 50px 0;
+  background: $primary;
+  color: #fff;
+
+  @media (min-width: 576px) {
+  }
+
+  @media (min-width: 992px) {
+  }
+
+  @media (min-width: 1600px) {
+
+  }
+
+  .container {
+    @media (min-width: 1200px) {
+      max-width: 1150px;
+    }
+  }
+
+  .block-trading {
+    @media (min-width: 500px) {
+      width: 470px;
+    }
+  }
+
+  .gap {
+    @media (min-width: 992px) {
+      width: 40px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 60px;
+    }
+
+    @media (min-width: 1600px) {
+      width: 70px;
+    }
+  }
+
+  .block-text {
+    margin-top: 30px;
+
+    @media (min-width: 576px) {
+      margin-top: 40px;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: unset;
+      width: calc(100% - 510px);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc(100% - 540px);
+    }
+  }
+
+  .h2 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align-last: left;
+    text-align: justify;
+    line-height: 26px;
+    letter-spacing: 0.35px;
+
+    &:first-of-type {
+      margin-top: 10px;
+    }
+
+    &:last-of-type {
+      margin-top: 40px;
+    }
+  }
+
+  .tradingview-widget-container {
+    width: 100% !important;
+    max-width: 470px;
+
+    iframe {
+      width: 100% !important;
+      max-width: 470px;
+    }
+  }
+
+  .tradingview-widget-copyright {
+    color: #fff !important;
+  }
+}
