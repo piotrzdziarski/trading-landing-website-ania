@@ -6,7 +6,8 @@ runCountersIfScrolled();
 addEventListener('scroll', runCountersIfScrolled);
 
 function runCountersIfScrolled() {
-    if (!areCountersRan && pageYOffset + innerHeight > counters[0].offsetTop - 50) {
+    if (!areCountersRan && pageYOffset + innerHeight > counters[0].getBoundingClientRect().top - 50) {
+
         areCountersRan = true;
 
         for (let i = 0; i < counters.length; i++) {
