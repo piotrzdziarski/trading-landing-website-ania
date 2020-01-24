@@ -45,7 +45,7 @@
   }
 
   .a {
-    padding: 40px 0 0 0;
+    margin: 40px 0 0 0;
     color: black;
     transition: color .2s;
     font-weight: 700;
@@ -54,11 +54,10 @@
     visibility: hidden;
 
     @media (min-width: 576px) {
-      padding: 45px 0 0 0;
+      margin: 45px 0 0 0;
     }
 
     @media (min-width: 992px) {
-      padding: unset;
       margin: 0 34px;
       visibility: visible !important;
     }
@@ -72,10 +71,10 @@
     }
 
     &:first-child {
-      padding-top: 80px;
+      margin-top: 80px;
 
       @media (min-width: 992px) {
-        padding-top: unset;
+        margin-top: unset;
       }
     }
 

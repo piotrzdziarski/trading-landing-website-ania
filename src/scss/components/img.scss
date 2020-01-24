@@ -1,0 +1,17 @@
+.img-wrapper {
+  position: relative;
+  padding: 16px;
+
+  .img {
+    box-shadow: 31px 26px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 8px solid $primary;
+    width: 52px;
+    height: 52px;
+  }
+}

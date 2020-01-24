@@ -1,0 +1,8 @@
+.claim-opinions {
+  padding: 50px 0 150px 0;
+  background: #000;
+
+  @media (min-width: 768px) {
+    padding: 60px 0 160px 0;
+  }
+}

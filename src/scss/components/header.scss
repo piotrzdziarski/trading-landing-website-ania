@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .line {
+    width: 70px;
+    height: 3px;
+    background: $primary;
+
+    @media (min-width: 576px) {
+      width: 78px;
+    }
+  }
+
+  .line-behind {
+    margin-left: 15px;
+  }
+
+  .line-before {
+    margin-right: 15px;
+  }
+}

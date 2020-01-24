@@ -3,15 +3,20 @@
 @import "global/flex";
 @import "global/headers";
 @import "components/container";
+@import "components/header";
+@import "components/img";
 @import "includes/nav";
 @import "includes/claim";
+@import "includes/about";
+@import "includes/claim-opinions";
+@import "includes/opinions";
+@import "includes/counters";
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-
-  height: 300vh;
+  color: #000;
 }
 
 * {
