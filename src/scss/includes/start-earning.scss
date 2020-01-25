@@ -172,6 +172,8 @@
   }
 
   .img-wrapper {
+    max-width: 304px;
+
     @media (min-width: 576px) {
       width: 50%;
     }

@@ -30,9 +30,10 @@
         <img class="img" src="img/claim.jpg" alt="Trading Monocolor">
         <div class="block-text">
             <div class="container">
-                <h1 class="h1">Lorem Ipsum is simply dummy text</h1>
+                <h1 class="h1">Zarabianie na giełdzie nigdy nie było prostsze.</h1>
                 <div>
-                    <h2 class="h2">of the printing and typesetting industry.</h2>
+                    <h2 class="h2">Naucz się podstaw i daj się wprowadzić <br>w świat zarabiania prawdziwych pieniędzy!
+                    </h2>
                 </div>
                 <a href="#zacznij-zarabiac" class="btn">
                     Zacznij zarabiać
@@ -51,29 +52,28 @@
             <div class="gap"></div>
             <div class="block-text">
                 <div class="header">
-                    <h2>Nazywam się Ania</h2>
+                    <h2>Cześć początkujący traderzy! ✋</h2>
                     <div class="line line-behind"></div>
                 </div>
                 <p>
-                    i mam 27 lat. Swoją przygodę z pracą na tacie zaczęłam po skończeniu studiów. Jak się okazało, po
-                    moim
-                    kierunku ciężko było dostać pracę w zawodzie, w związku z czym wylądowam na kasie w markecie.
-                    Zarobki
-                    nie
-                    były duże - starczało mi właściwie od 10 do 10 i nie mogłam sobie pozwolić na żadne luksusy.
-                    Pracowanie
-                    codziennie po 8 godzin również nie należało do moich ulubionych, ale nie to mnie męczyło
-                    najbardziej.
+                    Jestem przeciętnym gościem który miał dość nudnej roboty i spróbował swoich sił na giełdzie(skupiam
+                    się na forexie oraz surowcach i metalach).
                 </p>
                 <p>
-                    Jestem osobą pracowitą i potrafię poświęcić czemuś dużo więcej pracy i czasu, jeśli wiem że ma to
-                    sens.
-                    Chciałam osiągnąć w życiu coś więcej, dlatego poszłam na studia. Okazało się jednak, że dzisiaj
-                    wykształcenie wcale nie równa się dobrym zarobkom, luksusowym wakacjom za granicą, ładnym ciuchom i
-                    poczuciu
-                    tego, że to co robię ma jakieś większe znaczenie. Gdy już zdawało się, że utknęłam na kasie w
-                    sklepie,
-                    znalazłam artykuł o zarabianiu przez internet. Zainspirowało mnie to i zaczęłam działać.
+                    Przez 3 lata po studiach pracowałem na etacie jako kasjer, nie wstydzę się tego, ale nie ma się też
+                    czym chwalić. Z uwagi, że mieszkam w większym mieście zarobki nie były aż tak słabe bo dostawałem ok
+                    3000 do ręki, jednak jak to handel – kompletny brak czasu i stanie na nogach tyle godzin skutecznie
+                    zniechęcały do działania po pracy. Moje życie wyglądało nudno – praca, mieszkanie, praca,
+                    mieszkanie. Kompletnie żadnych przyjemności, życie od pierwszego do pierwszego, bez czasu i ochoty
+                    na wypady na miasto, z dziewczyną, znajomymi. Nawet brak ochoty na wakacje przez tę wyczerpującą
+                    pracę.
+                </p>
+                <p>
+                    Uznałem, że nie mogę tak dłużej funkcjonować bo prędzej czy później zwariuje. Szukałem w internecie
+                    sposobu na zarobienie pieniędzy bez tak wyczerpującej pracy. To właśnie wtedy natrafiłem na reklamę
+                    jakiegoś brokera i inwestowania na giełdzie. W pierwszej chwili nie miałem bladego pojęcia co ta
+                    strona do mnie mówi, jakieś forexy, dźwignie, trendy, wsparcia, opory, analizy techniczne, ciąg
+                    Fibonacciego i inne dziwne terminy.
                 </p>
             </div>
         </div>
@@ -130,6 +130,60 @@
             </div>
         </div>
     </section>
+    <section class="trading-belt">
+        <div class="container">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://pl.tradingview.com" rel="noopener"
+                                                             target="_blank"><span
+                    class="blue-text">Pasek Notowań</span></a> od TradingView
+                </div>
+                <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols"
+                    :
+                        [
+                            {
+                                "proName": "OANDA:SPX500USD",
+                                "title": "S&P 500"
+                            },
+                            {
+                                "proName": "OANDA:NAS100USD",
+                                "title": "Nasdaq 100"
+                            },
+                            {
+                                "proName": "FX_IDC:EURUSD",
+                                "title": "EUR/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:BTCUSD",
+                                "title": "BTC/USD"
+                            },
+                            {
+                                "proName": "BITSTAMP:ETHUSD",
+                                "title": "ETH/USD"
+                            }
+                        ],
+                            "colorTheme"
+                    :
+                        "light",
+                            "isTransparent"
+                    :
+                        false,
+                            "displayMode"
+                    :
+                        "adaptive",
+                            "locale"
+                    :
+                        "pl"
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+    <!-- TradingView Widget END -->
     <section id="zacznij-zarabiac" class="start-earning">
         <div class="container">
             <div class="header">
@@ -140,16 +194,23 @@
             <div class="lg-flex-centered">
                 <div class="block-text">
                     <p class="p">
-                        Początki bywają trudne i sama się o tym przekonałam. Zaczynałam od wypełniania marnie płatnych
-                        ankiet, na których dorabiałam sobie po kilkanaście złotych do wypłaty miesięcznie. Polecałam na
-                        social mediach różne produkty, w tym konta bankowe, jednak i to się w moim przypadku nie
-                        sprawdziło.
-                        Wszystko się zmieniło, gdy zainteresowałam się rynkiem Forex i trafiłam na typy analityków. W
-                        krótkim czasie pozwoliło mi to rzucić pracę na etacie i zarabiać nawet 5 razy więcej, niż do tej
-                        pory! Już w pierwszym roku bywały miesiące, gdzie moja wypłata przekraczała 10000 zł. Jeśli
-                        jesteś w
-                        podobnej sytuacji, w jakiej ja byłam, to rozwiązanie może być najlepszym, co Cię spotkało! Czy
-                        znajdziesz w sobie tyle odwagi, by spróbować?
+                        Porzuciłem ten temat bo nic z niego nie rozumiałem, jednak przez to, że odwiedziłem stronę,
+                        coraz
+                        więcej reklam brokerów mi się pokazywało i nie dawało to spokoju. Spróbowałem podejść do tego na
+                        spokojnie i poznać całe to inwestowanie od środka. 2 miesiące zajęło nauczenie się wszystkiego
+                        czego
+                        potrzebowałem, niestety wszystkiego uczyłem się sam i sam musiałem wszystko wyszukiwać co
+                        wydłużyło
+                        wszystko znacząco.
+                        <br>
+                        Byłem już gotowy do inwestowania, wpłaciłem pierwsze pieniądze i ze spoconymi rękami zacząłem
+                        realizować swój plan. Moje analizy okazały się skuteczne i w pierwszym tygodniu z 70$ udało mi
+                        się
+                        zrobić 230$. Po miesiącu od rozpoczęcia gry osiągałem już stałe dochody rzędu 200-500$ ponieważ
+                        mój
+                        kapitał się powiększył i mogłem otwierać większe pozycje, innymi słowy mogłem zakupić więcej aby
+                        drożej sprzedać. To właśnie wtedy rzuciłem swoją pracę, ponieważ w 3 dni byłem w stanie osiągnąć
+                        wynik z całego miesiąca pracy na etacie.
                     </p>
                     <form id="form" action="https://f-ads.pl/link/1350/33142863">
                         <label class="label" for="instagram">
@@ -168,12 +229,12 @@
                 <div class="block-img flex-centered-column sm-flex-row">
                     <div class="img-wrapper">
                         <div class="square square-first"></div>
-                        <img class="img" src="img/money-and-watch.jpg" alt="Money and watch">
+                        <img class="img" src="img/money-on-laptop.jpg" alt="Money on Laptop">
                     </div>
                     <div class="gap-img"></div>
                     <div class="img-wrapper img-wrapper-second">
                         <div class="square square-second"></div>
-                        <img class="img img-second" src="img/money-pile.jpg" alt="Money Pile">
+                        <img class="img img-second" src="img/money-near-plant.jpg" alt="Money near plant">
                     </div>
                 </div>
             </div>
@@ -340,20 +401,15 @@
         </div>
         <div class="gap"></div>
         <div class="block-text">
-            <h2 class="h2">What is Lorem Ipsum?</h2>
-            <p class="p">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-
-            <p class="p">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.
+            <h2 class="h2">I jak to się skończyło?</h2>
+            <p>
+                Nie musiałem wstawać rano i w pośpiechu szykować się do pracy i tkwić w porannych korkach w mieście.
+                Automat zautomatyzował większość moich ruchów na giełdzie a także zmieniłem brokera i dostałem
+                własnego analityka, dzięki czemu nie musiałem sam analizować sytuacji na rynku. Jest to bardzo
+                wygodne rozwiązanie dla osób, które czas pracy chcą ograniczyć do minimum. Udało mi się osiągnąć coś
+                o czym zawsze marzyłem. To niezależność finansowa oraz poczucie, że jestem Panem własnego losu.
+                Każdy może tego dokonać. Nie muszę chować tego w sekrecie ponieważ każdy może zarabiać w ten sam
+                sposób i nikt inny z tego powodu nie zarobi mniej, to niewyczerpana kopalnia pieniędzy!
             </p>
         </div>
     </div>
